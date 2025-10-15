@@ -9,7 +9,7 @@ const cors = require('cors');
 const app = express();
 // Add this after app initialization
 app.use(cors({
-  origin: 'https://sih-ugc-xvfq-4srq523i6-aryan-netizens-projects.vercel.app/', // Next.js default port
+  origin: 'https://sih-ugc-xvfq-4srq523i6-aryan-netizens-projects.vercel.app', // Next.js default port
   credentials: true
 }));
 
