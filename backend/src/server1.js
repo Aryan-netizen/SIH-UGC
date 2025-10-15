@@ -9,7 +9,7 @@ const cors = require('cors');
 const app = express();
 // Add this after app initialization
 app.use(cors({
-  origin: 'http://localhost:3001', // Next.js default port
+  origin: 'https://sih-ugc-xvfq.vercel.app/', // Next.js default port
   credentials: true
 }));
 
