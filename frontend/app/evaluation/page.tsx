@@ -347,7 +347,7 @@ export default function EvaluationPage() {
                       <div className="bg-blue-50 p-3 rounded">
                         <p className="text-xs text-gray-600 mb-1">AI Score</p>
                         <p className="text-2xl font-bold text-blue-700">
-                          {app.aiEvaluation.overallScore}/100
+                          {app.aiEvaluation.score}/100
                         </p>
                       </div>
                       <div className="bg-green-50 p-3 rounded">

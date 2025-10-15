@@ -8,6 +8,10 @@ export interface UGCCriteria {
   updatedAt?: string;
 }
 
+export type ApplicationStatus = 'pending' | 'approved' | 'rejected' | 'under_review';
+
+export type EvaluationRecommendation = 'APPROVE' | 'REJECT' | 'NEEDS_IMPROVEMENT';
+
 export interface CollegeApplication {
   _id: string;
   collegeName: string;
@@ -26,10 +30,12 @@ export interface CollegeApplication {
   remarks?: string;
   aiEvaluation?: {
     score: number;
-    recommendation: string;
+    recommendation: EvaluationRecommendation;
     reasoning: string;
     evaluatedAt: Date;
   };
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface EvaluateRequest {

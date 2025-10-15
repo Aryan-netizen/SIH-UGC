@@ -11,11 +11,8 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Building2, Users, Award, TrendingUp, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 import { applicationsAPI } from '@/lib/api';
-import { CollegeApplication, StatusUpdateRequest } from '@/lib/types';
+import { ApplicationStatus, CollegeApplication, StatusUpdateRequest } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
-
-// Add proper type for status
-type ApplicationStatus = 'pending' | 'approved' | 'rejected' | 'under_review';
 
 export default function ApplicationDetailPage() {
   const params = useParams();
