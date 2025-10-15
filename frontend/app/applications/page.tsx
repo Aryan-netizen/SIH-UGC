@@ -199,12 +199,12 @@ export default function ApplicationsPage() {
                   <div className="bg-gray-50 p-4 rounded-lg mb-4">
                     <div className="flex items-center justify-between mb-2">
                       <h4 className="text-sm font-semibold text-gray-900">AI Evaluation</h4>
-                      {getScoreBadge(app.aiEvaluation.overallScore)}
+                      {getScoreBadge(app.aiEvaluation.score)}
                     </div>
                     <p className="text-sm text-gray-700 mb-2">
                       Recommendation: <span className="font-semibold capitalize">{app.aiEvaluation.recommendation}</span>
                     </p>
-                    <p className="text-xs text-gray-600 line-clamp-2">{app.aiEvaluation.detailedAnalysis}</p>
+                    <p className="text-xs text-gray-600 line-clamp-2">{app.aiEvaluation.reasoning}</p>
                   </div>
                 )}
 
